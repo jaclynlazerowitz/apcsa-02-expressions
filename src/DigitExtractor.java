@@ -16,7 +16,21 @@ public class DigitExtractor {
     public static void main(String[] args) {
         int number = 472;
 
-        // Your code here
+        int hundreds = number/100;
+        int remainder = number%100;
+
+        int tens = remainder/10;
+        remainder = remainder%10;
+
+        int ones = remainder/1;
+
+        int sum = hundreds+tens+ones;
+
+System.out.println("Hundreds: " + hundreds);
+System.out.println("Tens: " + tens);
+System.out.println("Ones: " + ones);
+System.out.println("Sum: " + sum);
+
 
     }
 }

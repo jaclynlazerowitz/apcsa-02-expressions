@@ -12,7 +12,16 @@ public class TimeConverter {
     public static void main(String[] args) {
         int totalSeconds = 9296;
 
-        // Your code here
+        int hours = totalSeconds/3600;
+        int remainder = totalSeconds%3600;
+
+        int minutes = remainder/60;
+        remainder = remainder%60;
+
+
+        System.out.println("Hours: " + hours);
+        System.out.println("Minutes: " + minutes);
+        System.out.println("Seconds: " + remainder);
 
     }
 }

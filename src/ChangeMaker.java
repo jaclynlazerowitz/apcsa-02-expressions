@@ -19,7 +19,23 @@ public class ChangeMaker {
     public static void main(String[] args) {
         int totalCents = 287;   // try other values when it works
 
-        // Your code here
+        int quarters = totalCents/25;
+        int remainder = totalCents%25;
+
+        int dimes = remainder/10;
+        remainder = remainder%10;
+
+        int nickles = remainder/5;
+        remainder = remainder%5;
+
+        int pennies = remainder/1;
+      //  remainder = remainder%1; can't use it becase anything %1 always equals 0
+
+
+        System.out.println("Quarters: " + quarters);
+        System.out.println("Dimes: " + dimes);
+        System.out.println("Nickeles: " + nickles);
+        System.out.println("Pennies: " + pennies);
 
     }
 }
