@@ -3,7 +3,7 @@
 public class DebugMe3 {
     public static void main(String[] args) {
         double price = 19.99;
-        int rounded = price;
+        int rounded = (int) Math.round(price);
         System.out.println("Rounded price: " + rounded);
     }
 }

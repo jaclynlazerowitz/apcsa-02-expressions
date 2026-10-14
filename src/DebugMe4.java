@@ -5,7 +5,7 @@ public class DebugMe4 {
         int totalScore = 250;
         int numTests = 3;
 
-        double average = totalscore / numTests;
-        System.out.println("Average: " + Average);
+        double average = totalScore / numTests;
+        System.out.println("Average: " + average);
     }
 }

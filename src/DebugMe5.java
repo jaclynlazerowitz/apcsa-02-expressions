@@ -12,7 +12,7 @@ public class DebugMe5 {
         int pointsEarned = 43;
         int pointsPossible = 50;
 
-        double percentage = pointsEarned / pointsPossible * 100;
+        double percentage =  pointsEarned / pointsPossible * 100;
 
         System.out.println("Score: " + percentage + "%");
     }
