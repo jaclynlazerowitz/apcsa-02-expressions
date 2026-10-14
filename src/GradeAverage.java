@@ -21,7 +21,10 @@ public class GradeAverage {
         double project = 90;
         double participation = 100;
 
-        // Your code here
+        double weightedAverage = (homework * .15) + (classwork * .25) + (tests * .25) + (project * .25) + (participation * .10);
+        double rWeightedAverage = Math.round(weightedAverage * 10.0) / 10.0;
+
+        System.out.println("Current Grade: " + rWeightedAverage);
 
     }
 }

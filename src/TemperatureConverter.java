@@ -14,7 +14,15 @@ public class TemperatureConverter {
         double fahrenheit = 98.6;
         double celsius = 37.0;
 
-        // Your code here
+        double mathC = 5/9; //fix
+        double mathF = 9/5;
+
+        double calcF = (celsius * mathF) + 32;
+        double calcC = (fahrenheit - 32) * mathC;
+
+        System.out.println("Celsius: " + calcC);
+        System.out.println("Farenheit: " + calcF);
+        System.out.println(mathC);
 
     }
 }
